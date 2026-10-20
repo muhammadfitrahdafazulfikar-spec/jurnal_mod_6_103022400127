@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import './index.css'
+import panel from './component/panel'
+import KartuMenu from "./kartuMenu"
 function App() {
   const [count, setCount] = useState(0)
   const n = 27

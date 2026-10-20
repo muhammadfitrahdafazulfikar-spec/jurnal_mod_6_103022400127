@@ -1,4 +1,4 @@
-function KartuMenu(){
+function labelHarga(){
     return(
         <p>nama</p>,
         <p>harga</p>,
