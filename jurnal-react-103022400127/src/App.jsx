@@ -1,36 +1,31 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
-
+import './index.css'
 function App() {
   const [count, setCount] = useState(0)
+  const n = 27
+  const jam = 9
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <section id="no1">
+      <div classname = "judul">
+        <h1>Kantin Dafa_103022400127</h1>
+      </div>
+      <p>{(jam) < 12 ? "selamat pagi" : "selamat siang"}</p>
+      <p id="saldoAwal">saldo awal kartu kantin: Rp{n*1000}</p>
+      <button
+      type="button"
+      disabled
+      id="button"
+      className="bayar">
+        bayar
+      </button>
+    </section>
+    
+  
 
-      <div className="ticks"></div>
+      {/* <div className="ticks"></div>
 
       <section id="next-steps">
         <div id="docs">
@@ -114,7 +109,7 @@ function App() {
       </section>
 
       <div className="ticks"></div>
-      <section id="spacer"></section>
+      <section id="spacer"></section> */}
     </>
   )
 }
